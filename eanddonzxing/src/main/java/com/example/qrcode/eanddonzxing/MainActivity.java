@@ -45,7 +45,7 @@ public class MainActivity extends ActionBarActivity {
         txt = (TextView) findViewById(R.id.textView);
         img = (ImageView) findViewById(R.id.imageView);
         btn.setOnClickListener(but);
-        //test
+        //testGit
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {

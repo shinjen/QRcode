@@ -26,16 +26,6 @@ public class MainActivity extends ActionBarActivity {
     private Button btn;
     private TextView txt;
     private ImageView img;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        btn = (Button) findViewById(R.id.button);
-        txt = (TextView) findViewById(R.id.textView);
-        img = (ImageView) findViewById(R.id.imageView);
-        btn.setOnClickListener(but);
-    }
     private Button.OnClickListener but = new Button.OnClickListener() {
         public void onClick(View v) {
 
@@ -45,6 +35,18 @@ public class MainActivity extends ActionBarActivity {
 
         }
     };
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        btn = (Button) findViewById(R.id.button);
+        txt = (TextView) findViewById(R.id.textView);
+        img = (ImageView) findViewById(R.id.imageView);
+        btn.setOnClickListener(but);
+        //test132
+    }
 
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
         int width = 400, height = 400;

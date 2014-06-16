@@ -1,6 +1,6 @@
 QRcode
 ======
-Base on ZXing
+Based on ZXing
 
 Read QRcode
 Encode and Decode
